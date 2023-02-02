@@ -1,0 +1,22 @@
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: "*"
+
+server:
+  port: 8080
+  servlet:
+    context-path: /inventario
+
+spring:
+  neo4j:
+    uri: bolt://localhost:7687
+    database: inventario
+    authentication:
+      username: neo4j
+      password: root
+
+
+
